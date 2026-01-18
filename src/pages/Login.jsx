@@ -15,7 +15,7 @@ export default function Register() {
     const submit = async () => {
         await login(form);
         if (!useAuthStore.getState().error) {
-            navigate("/")
+            navigate("/products")
         }
     };
 
